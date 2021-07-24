@@ -1,0 +1,8 @@
+<div class="form-widget">
+    <ul>
+        {% for performance in field.value %}
+        <li class="title"> {{ performance.date|date("m/d/Y")}} {{ performance.time |date("g:ia")}} {{ performance.place }}</li>
+        {% endfor %}
+
+    </ul>
+</div>

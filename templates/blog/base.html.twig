@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}EL Hamra{% endblock %}</title>
+    <link rel="icon" href="{{ asset('_elhamra/images/favicon.ico') }}">
+    <link href='https://fonts.googleapis.com/css?family=Kufam' rel='stylesheet'> {% block stylesheets %}{% endblock %}
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="{{ asset('_elhamra/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css" integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ==" crossorigin="anonymous" />
+
+</head>
+
+<body class="loading ">
+
+    <div class="tw-preloader">
+        <div data-uk-spinner></div>
+    </div>
+
+    <div class="uk-container">
+
+        {% include 'blog/components/header.html.twig' %} {% include 'blog/components/navbar.html.twig' %} {% block content %} {% endblock %} {% include "blog/components/footer.html.twig" %}
+
+    </div>
+
+
+    <div class="uk-animation-toggle" tabindex="0">
+
+        <button class="uk-button uk-button-secondary uk-position-fixed uk-position-bottom-right  uk-margin-medium-bottom  uk-margin-medium-right uk-animation-shake uk-animation-reverse" data-uk-scroll><i class="ion-ios-arrow-up "></i></button>
+
+    </div>
+
+    {% include "blog/components/mobile_navbar.html.twig" %} {% block javascripts %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js "></script>
+    <script src="{{ asset('_elhamra/js/theme.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.7/holder.js" integrity="sha512-uhp2Ee4MNexF4HNrWF5Vo82DIq6bvfdEcDJEqOAVy7q2h2I4HsZTFgfEoHt7+j/Ez2cEeJ0yyrZZxcGeY9aT+A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js" integrity="sha512-NBLGIjYyAoYAr23l+dmAcUv7TvFj0XrqZoFa4i1o+F2VvF9SrERyMD8BHNnJn1SEGjl1AouBDcCv/q52L3ozBQ==" crossorigin="anonymous"></script>
+    <script src="{{ asset('_elhamra/js/logo.js') }}"></script>
+</body>
+
+</html>

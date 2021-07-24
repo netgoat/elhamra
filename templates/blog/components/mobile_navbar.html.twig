@@ -1,0 +1,45 @@
+<!-- OFFCANVAS -->
+<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+        <button class="uk-offcanvas-close uk-close" type="button" data-uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="{{ path('homepage') }}">EL HAMRA</a></li>
+            <ul class="uk-nav-sub">
+                <li><a href="#">L’espace</a></li>
+                <li><a href="#">Le fondateur</a></li>
+                <li><a href="#">Nos partenaires</a></li>
+            </ul>
+            <li class="uk-parent">
+                <a class="uk-nav-header" href="{{ path('newspage') }}" {% if app.request.attributes.get( '_route' ) matches '[newspage]' %}class="uk-active" {% endif %}>NEWS  </a>
+
+            </li>
+            <li class="uk-parent">
+                <a class="uk-nav-header" href="#"> LA Saison </a>
+                <ul class="uk-nav-sub">
+                    <li><a href=" {{ path('saison') }}" {% if app.request.attributes.get( '_route' ) matches '[saison*]' %}class="uk-active" {% endif %}>Cours de chant</a></li>
+                </ul>
+
+            </li>
+            <li class="uk-parent">
+                <a class="uk-nav-header" href="#"> ARAF CENTRE  </a>
+                <ul class="uk-nav-sub">
+                    <li><a href=" {{ path('araf_presentation') }}" {% if app.request.attributes.get( '_route' ) matches '[araf_presentation]' %}class="uk-active" {% endif %}>Présentation</a></li>
+                    <li><a href=" {{ path('araf_recrutement') }}" {% if app.request.attributes.get( '_route' ) matches '[araf_recrutement]' %}class="uk-active" {% endif %}>Appel à candidature</a></li>
+                </ul>
+            </li>
+            <li class="uk-parent">
+                <a class="uk-nav-header" href="#">LE FESTIVAL </a>
+                <ul class="uk-nav-sub">
+                    <li><a href="{{ path('festival_first_edition') }}" {% if app.request.attributes.get( '_route' ) matches '[festival_first_edition]' %}class="mobile-active" {% endif %}>1 er édition 2019</a></li>
+                    <li><a href="{{ path('festival_second_edition') }}" {% if app.request.attributes.get( '_route' ) matches '[festival_second_edition]' %}class="mobile-active" {% endif %}>2 éme édition 2021</a></li>
+                </ul>
+            </li>
+            <li class="uk-parent">
+                <a class="uk-nav-header" href="{{ path('contactpage') }}">CONTACT </a>
+
+            </li>
+
+        </ul>
+    </div>
+</div>
+<!-- /OFFCANVAS -->

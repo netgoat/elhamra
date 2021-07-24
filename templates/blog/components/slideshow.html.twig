@@ -1,0 +1,45 @@
+<!-- HERO -->
+<section class="uk-section uk-section-small">
+    <div class="uk-container">
+
+        <div uk-slideshow="min-height: 400; max-height: 400; animation: push; autoplay: true">
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                <ul class="uk-slideshow-items">
+
+                    {% for cover in covers %}
+
+                    <li>
+
+                        <img src="{{  vich_uploader_asset(cover.cover ,'imageFile')  }}" alt="">
+
+
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">{{ cover.title }}</h3>
+                            <p class="uk-margin-remove">{{cover.description |striptags('<b>,<br>,<div>,<ul>,<li>')|raw }}.</p>
+                            <a class="uk-button uk-button-default tw-hover" href="/{{cover.link}}"><span class="tw-hover-inner"><span>PLUS DE DETAILS</span><i class="ion-ios-arrow-thin-right"></i></span></a>
+
+                        </div>
+
+                    </li>
+                    {% endfor %}
+
+                    
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- HERO -->

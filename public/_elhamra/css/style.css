@@ -1,0 +1,500 @@
+        /*
+OLD RED_COLOR USED : #C1272D
+NEW RED_COLOR USED : #9b0b13
+
+*/
+        
+        html {
+            font-family: Kufam;
+        }
+        
+        .uk-logo>img {
+            margin-top: 40px !important;
+            height: auto !important;
+            width: auto !important;
+        }
+        /* Preloader */
+        
+        body {
+            transition: background-color 0.5s ease-in-out;
+            font-family: Kufam;
+        }
+        
+        body.loading {
+            overflow: hidden;
+        }
+        
+        body>.tw-preloader,
+        body.loading {
+            background-color: #fff;
+        }
+        
+        body>.tw-preloader {
+            color: #9b0b13;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100vh;
+        }
+        
+        body>.header-container,
+        body>.main-container {
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        body.loading>.header-container,
+        body.loading>.main-container,
+        body>.tw-preloader {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        body.loading>.tw-preloader {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        nav.navscroll {
+            position: relative;
+            z-index: 2;
+            height: 3rem;
+            box-sizing: border-box;
+            overflow-y: hidden;
+            padding: 1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.075);
+            line-height: 1em;
+            background: #9b0b13;
+        }
+        /* END Preloader */
+        /* Header*/
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+        }
+        
+        #header.uk-sticky-below {
+            box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.07);
+        }
+        /* END Header*/
+        /*   Navbar*/
+        
+        .uk-navbar-container:not(.uk-navbar-transparent) {
+            background: #9b0b13;
+        }
+        
+        .uk-navbar-item,
+        .uk-navbar-nav>li>a,
+        .uk-navbar-toggle {
+            min-height: 0px !important;
+        }
+        
+        .uk-navbar-container {
+            height: 40px;
+        }
+        
+        .uk-navbar-nav>li>a {
+            color: #fff !important;
+            /* font-weight: bold !important;*/
+        }
+        
+        .uk-navbar-nav>li.uk-active>a {
+            color: #fff !important;
+            border-bottom: 4px solid #fff;
+            position: relative;
+        }
+        
+        .uk-navbar-dropdown-nav>li>a {
+            color: #000;
+        }
+        
+        .uk-navbar-dropdown-nav>li>a:focus,
+        .uk-navbar-dropdown-nav>li>a:hover {
+            color: #9b0b13;
+        }
+        
+        .uk-navbar-left {
+            color: #333;
+        }
+        
+        .uk-navbar-center:not(:only-child) {
+            top: 190% !important;
+        }
+        /* END Navbar*/
+        
+        .red {
+            display: table;
+            color: #9b0b13 !important;
+            background-color: #fff;
+        }
+        /* BUTTON */
+        
+        .btn6,
+        .btn6:link,
+        .btn6:visited {
+            color: #333;
+            text-transform: uppercase;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+        
+        .btn6:hover,
+        .btn6:link:hover,
+        .btn6:visited:hover {
+            background: #9b0b13;
+            border: 1px solid #9b0b13;
+            color: #fefefe;
+        }
+        
+        .btn-subscribe:hover,
+        .btn-subscribe:link:hover,
+        .btn-subscribe:visited:hover {
+            background: #9b0b13;
+            border: 1px solid #9b0b13;
+            color: #fefefe;
+        }
+        
+        .uk-overlay-primary {
+            opacity: 0.5 !important;
+        }
+        
+        header {
+            background-color: #fff;
+            margin-top: 10px !important;
+            height: 120px;
+        }
+        /* Footer*/
+        
+        footer {
+            background-color: #191919;
+            font-size: small !important;
+        }
+        
+        .tw-socials a i {
+            font-size: 16px;
+            margin-right: 15px;
+        }
+        
+        footer button:hover {
+            background: #9b0b13 !important;
+            border: 1px solid #9b0b13 !important;
+            border-radius: 30px !important;
+        }
+        
+        footer i:hover {
+            color: #9b0b13 !important;
+        }
+        
+        .footer-content {}
+        
+        footer button i {
+            color: #fff;
+        }
+        
+        footer ul {
+            list-style: none;
+            padding-left: 0px !important;
+        }
+        
+        footer li {
+            margin-top: 10px;
+        }
+        /* END  Footer*/
+        /* Button Styling */
+        
+        .tw-hover .tw-hover-inner {
+            position: relative;
+            transition: background 0.3s, border 0.3s ease-out;
+        }
+        
+        .no-hover i {
+            margin-left: 8px;
+        }
+        
+        .tw-hover .tw-hover-inner i {
+            font-size: 12px;
+            line-height: 1;
+            width: 18px;
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            margin-top: -6px;
+            opacity: 0;
+            -ms-filter: "alpha(opacity=0)";
+            transition: right 0.2s ease-out;
+        }
+        
+        .tw-hover .tw-hover-inner.uk-button-small i {
+            right: 25px;
+        }
+        
+        .tw-hover .tw-hover-inner span {
+            position: relative;
+            left: 0px;
+            transition: left 0.2s ease-out;
+        }
+        
+        .tw-hover:hover .tw-hover-inner span {
+            left: -7px;
+        }
+        
+        .tw-hover:hover .tw-hover-inner i {
+            opacity: 1 !important;
+            -ms-filter: "alpha(opacity=100)";
+            right: -15px;
+        }
+        /* nav item animation*/
+        
+        .navItem {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        
+        .navItem::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            /* bottom: 1.7rem;*/
+            bottom: 0.01rem;
+            height: 0.175rem;
+            background: #fff;
+            transform: scaleX(0);
+            transform-origin: 0% 100%;
+            transition: all 0.6s ease-in-out 0.1s;
+        }
+        
+        .navItem:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        /*end nav item animation */
+        /* Title Animation*/
+        
+        .c-title {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            font-family: Kufam;
+        }
+        
+        .c-title::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            height: 0.175rem;
+            background: #9b0b13;
+            transform: scaleX(0);
+            transform-origin: 0% 100%;
+            transition: all 0.6s ease-in-out 0.1s;
+        }
+        
+        .c-title:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        /* END Title*/
+        
+        .footer-content h4 {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-content h4::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            height: 0.175rem;
+            background: #fff;
+            transform: scaleX(0);
+            transform-origin: 0% 100%;
+            transition: all 0.6s ease-in-out 0.1s;
+        }
+        
+        .footer-content h4:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        
+        .uk-icon:hover {
+            border-radius: 0% !important;
+            background: #fff !important;
+            border-color: #fff !important;
+        }
+        
+        .mobile-active {
+            color: #fff !important;
+            text-decoration: underline !important;
+        }
+        /*logoAR*/
+        
+        .st0 {
+            fill: #9b0b13;
+        }
+        
+        .st2 {
+            fill: black;
+        }
+        /*logoFR*/
+        
+        .st1 {
+            fill: #9b0b13;
+        }
+        
+        .st3 {
+            fill: black;
+        }
+        
+        .uk-navbar-item>#logo {
+            fill: none !important;
+            color: #fff !important;
+        }
+        /* On screens that are 600px or less, set the background color to olive */
+        
+        @media screen and (max-width: 959px) {
+            .uk-logo {
+                width: 200px;
+            }
+            .uk-logo>svg {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* CARD*/
+        
+        .card-media {
+            height: 300px !important;
+        }
+        /*ENDCARD*/
+        /* GRID OVRELAY*/
+        
+        .container {
+            padding: 1em 0;
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+        
+        @media screen and (max-width: 640px) {
+            .container {
+                display: block;
+                width: 100%;
+            }
+        }
+        
+        @media screen and (min-width: 900px) {
+            .container {
+                width: 33.33333%;
+            }
+        }
+        
+        .container .title {
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        .content .content-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            height: 99%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+        }
+        
+        .content:hover .content-overlay {
+            opacity: 1;
+        }
+        
+        .content-image {
+            width: 100%;
+        }
+        
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        
+        .content:hover .content-details {
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+        }
+        
+        .content-details h3 {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+        
+        .content-details p {
+            color: #fff;
+            font-size: 0.8em;
+        }
+        
+        .fadeIn-bottom {
+            top: 80%;
+        }
+        
+        .fadeIn-top {
+            top: 20%;
+        }
+        
+        .fadeIn-left {
+            left: 20%;
+        }
+        
+        .fadeIn-right {
+            left: 80%;
+        }
+        /*END GRID OVRELAY*/
+        /* Partenaire*/
+        
+        .partenaire {
+            height: 200px;
+            width: 40%;
+            margin-left: 30%;
+            background-color: #fff;
+        }
+        /* END Partenaire*/

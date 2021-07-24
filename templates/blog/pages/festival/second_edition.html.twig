@@ -1,0 +1,55 @@
+{% extends 'blog/base.html.twig' %}
+
+{% block content %}
+
+        <!--ARTICLE-->
+
+        <section class="uk-section uk-article">
+
+
+            <div class="uk-container uk-container-small">
+                <h3 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top ">LA DEUXIÉME ÉDITION DU FESTIVAL EZZEDDINE GANNOUN SERA EN JUIN 2021</h3>
+                <p class="uk-article-meta">Written on 27 September 2020. Posted in <a href="#">Blog</a> | <span data-uk-icon="icon: future"></span> Takes 10 min reading.</p>
+            </div>
+
+            <!-- large image -->
+            <div class="uk-container uk-section">
+                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="http://via.placeholder.com/1200x400" alt="">
+                </div>
+
+            </div>
+            <!-- /large image -->
+            <!-- text -->
+            <div class="uk-container uk-container-small example" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+
+                <div class="uk-card uk-card-hover uk-card-body">
+
+                    <h3 class="c-title">UN CENTRE UNIQUE DANS LE MONDE ARABE ET EN AFRIQUE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi quia deleniti esse adipisci, sed modi unde veritatis magni quis mollitia debitis, quae, voluptate velit autem! Dolores maiores perspiciatis odit. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure magni provident numquam amet minus atque magnam modi ratione sapiente non, veniam ipsum consequatur doloribus, architecto temporibus natus aperiam a distinctio! Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Iure magni provident numquam amet minus atque magnam modi ratione sapiente non, veniam ipsum consequatur doloribus, architecto temporibus natus aperiam a distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Iure magni provident numquam amet minus atque magnam modi ratione sapiente non, veniam ipsum consequatur doloribus, architecto temporibus natus aperiam a distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                        magni provident numquam amet minus atque magnam modi ratione sapiente non, veniam ipsum consequatur doloribus, architecto temporibus natus aperiam a distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni
+                        provident numquam amet minus atque magnam modi ratione sapiente non, veniam ipsum consequatur doloribus, architecto temporibus natus aperiam a distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni provident
+                        numquam amet minus atque magnam modi ratione sapiente non, veniam ipsum consequatur doloribus, architecto temporibus natus aperiam a distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni provident numquam
+                        amet minus atque magnam modi ratione sapiente non, veniam ipsum consequatur doloribus, architecto temporibus natus aperiam a distinctio!
+                    </p>
+                </div>
+                <button class="uk-button uk-button-secondary  uk-button-large tw-hover btn-subscribe uk-align-center"><span class="tw-hover-inner"><span>S'inscrire</span><i class="ion-ios-arrow-thin-right"></i></span></button>
+
+            </div>
+            <!-- text -->
+
+
+
+
+        </section>
+
+        <!-- /ARTICLE-->
+
+
+                {% include "blog/components/featured.html.twig" %}
+
+  {% endblock %}

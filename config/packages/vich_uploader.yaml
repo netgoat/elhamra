@@ -1,0 +1,44 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        
+        attachement:
+            uri_prefix: /attachements/posts
+            upload_destination: '%kernel.project_dir%/public/attachements/posts'
+     
+        posts:
+            uri_prefix: /images/posts
+            upload_destination: '%kernel.project_dir%/public/images/posts'
+
+         # carrousel file sources config  
+        carrousel_image:
+            uri_prefix: /images/carrousel
+            upload_destination: '%kernel.project_dir%/public/images/carrousel'
+
+        # productions file sources config 
+        prods_attachement:
+            uri_prefix: /attachements/prods
+            upload_destination: '%kernel.project_dir%/public/attachements/prods'
+     
+        prods_image:
+            uri_prefix: /images/prods
+            upload_destination: '%kernel.project_dir%/public/images/prods'
+
+        # news file sources config  
+        news_attachement:
+            uri_prefix: /attachements/news
+            upload_destination: '%kernel.project_dir%/public/attachements/news'
+     
+        news_image:
+            uri_prefix: /images/news
+            upload_destination: '%kernel.project_dir%/public/images/news'
+
+        # programs file sources config  
+        programs_attachement:
+            uri_prefix: /attachements/programs
+            upload_destination: '%kernel.project_dir%/public/attachements/programs'
+     
+        programs_image:
+            uri_prefix: /images/programs
+            upload_destination: '%kernel.project_dir%/public/images/programs'
